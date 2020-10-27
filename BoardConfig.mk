@@ -1,16 +1,17 @@
 # Inherit common board flags
 include device/samsung/sm7150-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/a71n
+DEVICE_PATH := device/samsung/m51
 
 # Platform
 #TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a71n
+TARGET_OTA_ASSERT_DEVICE := m51
 
 # Kernel
-TARGET_KERNEL_CONFIG := sm7150_sec_defconfig
+#TARGET_KERNEL_CONFIG := sm7150_sec_defconfig
+TARGET_KERNEL_CONFIG := m51_eur_open_defconfig
 #TARGET_KERNEL_VARIANT_CONFIG := vendor/variant_x1q_chn_openx_defconfig
 #KERNEL_LD := DEBUG_DEFCONFIG=vendor/aosp_defconfig
 
